@@ -12,6 +12,7 @@ languageOptions =
   , "OverloadedStrings"
   , "NamedFieldPuns"
   , "RecordWildCards"
+  , "GeneralizedNewtypeDeriving"
   ]
 
 
