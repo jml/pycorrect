@@ -1,5 +1,5 @@
--- | Example of a library file. It is also used for testing the test suites.
-module Lib
+-- | Analyze Python code for correctness.
+module PyCorrect
   (
     -- * Exported functions
     inc

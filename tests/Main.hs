@@ -6,7 +6,9 @@ import Test.Tasty
 import Test.Tasty.HUnit
 import Test.Tasty.SmallCheck
 
-import Lib (inc)
+import PyCorrect (inc)
+
+import qualified PythonBindings
 
 main :: IO ()
 main = defaultMain $ testGroup "all-tests" tests
@@ -15,6 +17,7 @@ tests :: [TestTree]
 tests =
   [ testGroup "SmallCheck" scTests
   , testGroup "Unit tests" huTests
+  , PythonBindings.tests
   ]
 
 scTests :: [TestTree]
