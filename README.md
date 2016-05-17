@@ -1,6 +1,5 @@
-pycorrect
-==========
+# pycorrect
 
-New Haskell project using stack template `tasty-travis`.
+[![Build Status](https://travis-ci.org/jml/pycorrect.svg?branch=master)](https://travis-ci.org/jml/pycorrect)
 
-Please read file `tutorial.md` for first steps in using the template.
+Analyzes Python code for correctness.

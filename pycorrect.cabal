@@ -1,6 +1,6 @@
 name:                pycorrect
 version:             0.1.0.0
-synopsis:            Initial project template from stack
+synopsis:            Analyze Python source code for correctness
 description:         Please see README.md
 
 license:             GPL
