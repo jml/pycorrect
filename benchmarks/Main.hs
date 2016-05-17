@@ -1,3 +1,7 @@
+module Main (main) where
+
+import BasicPrelude
+
 import Criterion
 import Criterion.Main
 

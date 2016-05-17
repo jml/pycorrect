@@ -5,6 +5,8 @@ module Lib
     inc
   ) where
 
+import BasicPrelude
+
 -- | Increment one 'Num' value.
 --
 --  >>> let answer = 42 :: Int

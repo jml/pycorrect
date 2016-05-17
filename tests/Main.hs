@@ -1,3 +1,7 @@
+module Main (main) where
+
+import BasicPrelude
+
 import Test.Tasty
 import Test.Tasty.HUnit
 import Test.Tasty.SmallCheck
