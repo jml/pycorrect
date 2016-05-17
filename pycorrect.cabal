@@ -27,14 +27,14 @@ source-repository head
 library
   default-language:  Haskell2010
   ghc-options:       -Wall -Werror -O2
-  hs-source-dirs:    src
+  hs-source-dirs:    lib
   exposed-modules:   Lib
   build-depends:     base >= 4.8 && < 5
 
-executable pycorrect-exe
+executable pycorrect
   default-language:  Haskell2010
   ghc-options:       -Wall -Werror -O2 -Wall -threaded -rtsopts -with-rtsopts=-N
-  hs-source-dirs:    src-exe
+  hs-source-dirs:    src
   main-is:           Main.hs
   build-depends:     base >= 4.8 && < 5
                    , pycorrect
@@ -43,7 +43,7 @@ test-suite pycorrect-test
   type:              exitcode-stdio-1.0
   default-language:  Haskell2010
   ghc-options:       -Wall -Werror -O2 -Wall -threaded -rtsopts -with-rtsopts=-N
-  hs-source-dirs:    src-test
+  hs-source-dirs:    tests
   main-is:           Main.hs
   build-depends:     base >= 4.8 && < 5
                    , tasty >= 0.11
@@ -55,7 +55,7 @@ test-suite pycorrect-doctest
   type:              exitcode-stdio-1.0
   default-language:  Haskell2010
   ghc-options:       -Wall -Werror -O2 -Wall -threaded -rtsopts -with-rtsopts=-N
-  hs-source-dirs:    src-doctest
+  hs-source-dirs:    doctests
   main-is:           Main.hs
   build-depends:     base >= 4.8 && < 5
                    , doctest >=0.10
@@ -67,7 +67,7 @@ benchmark pycorrect-benchmark
   type:              exitcode-stdio-1.0
   default-language:  Haskell2010
   ghc-options:       -Wall -Werror -O2 -Wall -threaded -rtsopts -with-rtsopts=-N
-  hs-source-dirs:    src-benchmark
+  hs-source-dirs:    benchmarks
   main-is:           Main.hs
   build-depends:     base >= 4.8 && < 5
                    , criterion >= 1.1

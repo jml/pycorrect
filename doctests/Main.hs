@@ -2,4 +2,4 @@ import System.FilePath.Glob
 import Test.DocTest
 
 main :: IO ()
-main = glob "src/**/*.hs" >>= doctest
+main = glob "lib/**/*.hs" >>= doctest
